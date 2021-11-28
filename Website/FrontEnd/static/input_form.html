@@ -1,0 +1,109 @@
+{% extends "base.html" %} 
+{% block content %}
+<form method="post">
+    <table>
+        <div class="row">
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Enter MDVP:Fo(Hz)" name="mdvp_fo_hz" step="any">
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Enter MDVP:Fhi(Hz)" name="mdvp_fhi_hz" step="any">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Enter MDVP:Flo(Hz)" name="mdvp_flo_hz" step="any">
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Enter MDVP:Jitter(%)" name="mdvp_jitter_percent" step="any">
+            </div>
+        </div>
+        
+        <div class="row">
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Enter MDVP:Jitter(Abs)" name="mdvp_jitter_abs" step="any">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Enter MDVP:RAP" name="mdvp_rap" step="any">
+        </div>
+        </div>
+        <div class="row">
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Enter MDVP:PPQ" name="mdvp_ppq" step="any">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Enter Jitter:DDP" name="jitter_ddp" step="any">
+        </div>
+        </div>
+        
+        <div class="row">
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Enter MDVP:Shimmer" name="mdvp_shimmer" step="any">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Enter MDVP:Shimmer(dB)" name="mdvp_shimmer_db" step="any">
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter Shimmer:APQ3" name="shimmer_apq3" step="any">
+            </div>
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter Shimmer:APQ5" name="shimmer_apq5" step="any">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter MDVP:APQ" name="mdvp_apq" step="any">
+            </div>
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter Shimmer:DDA" name="shimmer_dda" step="any">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter NHR" name="nhr" step="any">
+            </div>
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter HNR" name="hnr" step="any">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter RPDE" name="rpde" step="any">
+            </div>
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter DFA" name="dfa" step="any">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter Spread1" name="spread1" step="any">
+            </div>
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter Spread2" name="spread2" step="any">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter D2" name="d2" step="any">
+            </div>
+            <div class="col">
+            <input type="number" class="form-control" placeholder="Enter PPE" name="ppe" step="any">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <input type="submit" class="btn btn-primary" value="Get Result">
+            </div>
+        </div>
+    </table>
+  </form>
+{% endblock %}
